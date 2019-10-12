@@ -1,33 +1,34 @@
 # User Settings | Edit there as per required
 
-title: accent
-url: "http://ankitsultana.com"
-baseurl: "/accent"
+title: otya design
+url: "https://dejaaaa.github.io"
+baseurl: "/otya"
 
 # This will show up at the top of index page
 site_heading: >
-    foo <span class="faded">'s blog</span>
+​    Otya <span class="faded">'s portfolio</span>
 
-email: your@email.com
-author: yourname
+email: huangll19930101@gmail.com
+author: Otya
+
 # This description will show up in google search results
 # (for index page) etc.
 description: >
-    accent is, as Trump would put it, the best
+​    accent is, as Trump would put it, the best
 
 # This will what will show against &copy; in the footer
-copyright: accent
+copyright: Otya
 # Toggle your short bio, which will displayed on your index page
 # Just toggle it and run jekyll again to see
 intro: false         # Tip: Remove the span from site_heading if intro is set to true
 # This will be displayed in your intro
 short_bio: >
-    Welcome! This is <span>accent</span>, a mobile friendly theme for Jekyll. The main feature of this
-    theme is that you can change the accent color. Refer the
-    <a class="underline different-highlight" href="http://ankitsultana.com/accent/documentation.html">
-        Documentation
-    </a>
-    to know how.
+​    Welcome! This is <span>accent</span>, a mobile friendly theme for Jekyll. The main feature of this
+​    theme is that you can change the accent color. Refer the
+​    <a class="underline different-highlight" href="http://ankitsultana.com/accent/documentation.html">
+​        Documentation
+​    </a>
+​    to know how.
 
 permalink: /:title.html
 
@@ -39,7 +40,7 @@ comments: true
 # Note that about_footer should be true if you want
 # to see author information at the bottom of each post
 about_stub: >
-    Keep this sentence less than 13 words or it won't look good.
+​    Keep this sentence less than 13 words or it won't look good.
 
 about_footer: true
 
@@ -70,25 +71,25 @@ twitter_image: "http://ankitsultana.com/images/accent.png?1234" # This will show
 markdown: kramdown
 
 plugins:
-    - jekyll-paginate
+​    - jekyll-paginate
 
 sass:
-    style: compressed
-    sass_dir: _sass
+​    style: compressed
+​    sass_dir: _sass
 
 # Scopes
 defaults:
-    -
-        scope:
-            path:   ""
-            type:   "pages"
-        values:
-            layout: "page"
-    -
-        scope:
-            path:   ""
-            type:   "posts"
-        values:
-            layout: "post"
+​    -
+​        scope:
+​            path:   ""
+​            type:   "pages"
+​        values:
+​            layout: "page"
+​    -
+​        scope:
+​            path:   ""
+​            type:   "posts"
+​        values:
+​            layout: "post"
 
 exclude: [vendor] # For travis ci
