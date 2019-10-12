@@ -1,95 +1,85 @@
-# User Settings | Edit there as per required
+# Site/SEO settings
+email: okay@samesies.io
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+google_analytics: 
 
-title: otya design
-url: "https://dejaaaa.github.io"
-baseurl: "/otya"
-
-# This will show up at the top of index page
-site_heading: >
-​    Otya <span class="faded">'s portfolio</span>
-
-email: huangll19930101@gmail.com
-author: Otya
-
-# This description will show up in google search results
-# (for index page) etc.
+name: Thomas Vaeth
+title: The Barber Theme
 description: >
-​    accent is, as Trump would put it, the best
+  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
+url: http://barber.samesies.io
+twitter_username: thomasvaeth
+default_img: /assets/images/seo.jpg
+social:
+  - name: twitter
+    url: https://twitter.com/thomasvaeth
+  - name: instagram
+    url: https://www.instagram.com/thomas.vaeth/
+  - name: linkedin
+    url: https://www.linkedin.com/in/thomasvaeth/
+  - name: github
+    url: https://github.com/samesies
+  - name: codepen
+    url: https://codepen.io/thomasvaeth/
 
-# This will what will show against &copy; in the footer
-copyright: Otya
-# Toggle your short bio, which will displayed on your index page
-# Just toggle it and run jekyll again to see
-intro: false         # Tip: Remove the span from site_heading if intro is set to true
-# This will be displayed in your intro
-short_bio: >
-​    Welcome! This is <span>accent</span>, a mobile friendly theme for Jekyll. The main feature of this
-​    theme is that you can change the accent color. Refer the
-​    <a class="underline different-highlight" href="http://ankitsultana.com/accent/documentation.html">
-​        Documentation
-​    </a>
-​    to know how.
+# Contact settings
+contact_img: /assets/images/placeholder-28.jpg
+formcarry: https://formcarry.com/s/HkIo0nMb7
 
-permalink: /:title.html
+# Disqus settings
+disqus: test-apkdzgmqhj
 
-# Comments are powered by disqus
-comments: true
+# MailChimp settings
+mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
+mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
 
-# keep about_stub roughly 12 words long for best results
-# This will show up at the bottom of each post
-# Note that about_footer should be true if you want
-# to see author information at the bottom of each post
-about_stub: >
-​    Keep this sentence less than 13 words or it won't look good.
+# Author settings
+author:
+  - name: Thomas Vaeth
+    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
+    url: http://thomasvaeth.com
 
-about_footer: true
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts: 
+      - 'tag.html'
+    title: 'The Barber Theme'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
 
-twitter_username: AnkitSultana
-github_username: yourgithub
-facebook_id: yourusername
-
-favicon: true
-favicon_location: "images/favicon.ico"
-
-profile_picture: images/temp.png
-paginate: 5
-paginate_path: "/page/:num"
-tracking_id: UA-69243698-7 # GA Tracking ID
-
-# Social Stuff | open graph and twitter cards
-og_image: "images/accent.png" # This will show in facebook thumbnails
-twitter_image: "http://ankitsultana.com/images/accent.png?1234" # This will show in twitter cards
-
-####################################
-####################################
-####################################
-### Build Settings | Don't Touch ###
-####################################
-####################################
-####################################
-
+# Build settings
 markdown: kramdown
-
 plugins:
-​    - jekyll-paginate
-
-sass:
-​    style: compressed
-​    sass_dir: _sass
-
-# Scopes
-defaults:
-​    -
-​        scope:
-​            path:   ""
-​            type:   "pages"
-​        values:
-​            layout: "page"
-​    -
-​        scope:
-​            path:   ""
-​            type:   "posts"
-​        values:
-​            layout: "post"
-
-exclude: [vendor] # For travis ci
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - node_modules
+  - .DS_Store
+  - barber.jpg
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - README.md
